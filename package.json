@@ -2,9 +2,10 @@
   "name": "everest-backend-assignment",
   "version": "1.0.0",
   "description": "this is an assignment project for everestwalk",
-  "main": "app.js",
   "scripts": {
-    "test": "test.js"
+    "test": "test.js",
+    "start": "node ./bin/www",
+    "dev": "nodemon ./bin/www"
   },
   "keywords": [
     "everestwalk",

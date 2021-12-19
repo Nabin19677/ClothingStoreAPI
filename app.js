@@ -3,6 +3,8 @@ const logger = require("morgan");
 
 const app = express();
 
-app.listen(3000, () => {
-  console.log("Listening On 3000");
+app.get("/", (req, res) => {
+  res.send(200);
 });
+
+module.exports = app;
