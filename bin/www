@@ -10,3 +10,6 @@ server.listen(port);
 server.on("listening", () => {
   console.log(`Server is listening on port ${port}`);
 });
+
+//testing
+module.exports = server;
