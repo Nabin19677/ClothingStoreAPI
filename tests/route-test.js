@@ -3,6 +3,7 @@ var chaiHttp = require("chai-http");
 var app = require("../app");
 
 var expect = chai.expect;
+var should = chai.should();
 
 chai.use(chaiHttp);
 
@@ -11,7 +12,7 @@ it("Routes", (done) => {
     .request(app)
     .post("/api/auth/login")
     .end((error, response) => {
-      expect(response.text).to.equal("Logged In");
+      response.should.have.status(200);
       done();
     });
 });
