@@ -1,10 +1,32 @@
 {
   "development": {
     "config_id": "development",
-    "express_port": 3000
+    "app": {
+      "express_port": 3000
+    },
+    "database": {
+      "mongodb": {
+        "uri": "mongodb://localhost:27017/everestwalk",
+        "hostname": "localhost:27017",
+        "user_name": "",
+        "password": "",
+        "db_name": "everestwalk"
+      }
+    }
   },
-  "<env_name>": {
-    "config_id": "<env_id>",
-    "express_port": "<env_port>"
+  "<env-name>": {
+    "config_id": "<env-name>",
+    "app": {
+      "express_port": "<env-port>"
+    },
+    "database": {
+      "mongodb": {
+        "uri": "<mongo-uri>",
+        "hostname": "<mongo-hostname>",
+        "user_name": "<mongo-username>",
+        "password": "<mongo-password>",
+        "db_name": "<mongo-db_name>"
+      }
+    }
   }
 }

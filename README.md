@@ -12,3 +12,5 @@ cd assignment
 npm i
 npm start
 ```
+
+<span style="color:#ffc590">Note : Create a new config.json file inside .config folder</span>
