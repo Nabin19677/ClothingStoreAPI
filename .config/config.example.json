@@ -1,0 +1,10 @@
+{
+  "development": {
+    "config_id": "development",
+    "express_port": 3000
+  },
+  "<env_name>": {
+    "config_id": "<env_id>",
+    "express_port": "<env_port>"
+  }
+}

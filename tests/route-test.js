@@ -10,7 +10,7 @@ chai.use(chaiHttp);
 it("Routes", (done) => {
   chai
     .request(app)
-    .post("/api/auth/login")
+    .post("/api/v1/auth/login")
     .end((error, response) => {
       response.should.have.status(200);
       done();

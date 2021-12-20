@@ -1,7 +1,13 @@
+//require app configurations
+require("../.config/config.js");
+
 const app = require("../app");
 const http = require("http");
+const utility = require("../helpers/utility");
 
-var port = process.env.PORT || "3000";
+var port = utility.normalizePort(
+  process.env.PORT || global.config.express_port
+);
 app.set("port", port);
 
 const server = http.createServer(app);
