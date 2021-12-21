@@ -1,4 +1,3 @@
-const { expect } = require("chai");
 const _ = require("lodash");
 
 const config = require("./config.json");
